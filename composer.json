@@ -1,0 +1,18 @@
+{
+    "name": "wcs/kata-exemple",
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "authors": [
+        {
+            "name": "2binfree",
+            "email": "laurent.aubertin@free.fr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+	"psr-4": {
+	    "wcs\\": "src/"
+	}
+    }
+}
