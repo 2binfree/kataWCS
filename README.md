@@ -1,5 +1,5 @@
 # kataStarter
-Empty kata and documentation how to set up a folder for a kata project
+##Empty kata and documentation how to set up a folder for a kata project
 
 1. Create folders
   ```  
@@ -83,3 +83,17 @@ Empty kata and documentation how to set up a folder for a kata project
 
 10. Correct your bug ;-)
 
+##Optionnal : configure phpstorm to run phpunit tests
+
+1. File/settings/Plugins: Check and add if necessary phpunit plugin (code coverage and autocomplete assistant)
+2. File/settings/PHP/PHPUnit:
+  - check "use custom autoloader"
+  - path to script : the autoload.php to the vendor directory (.../kataExemple/vendor/autoload.php)
+  - check default configuration file : the phpunit.xml in your kataExemple directory
+3. Create a new run/debug configuration
+  - Select PHPUnit
+  - Create a name
+  - select directory
+  - set path to your tests directory (.../kataExemple/tests)
+  - OK
+4. You can run (or debug if xdebug is configured) your unit tests
