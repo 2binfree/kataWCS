@@ -1,6 +1,11 @@
 # kataStarter
 ##Empty kata and documentation how to set up a folder for a kata project
 
+PHPUnit must be installed on your system before to run this process.
+
+Just run :``` sudo apt install phpunit ```
+
+
 1. Create folders
   ```  
   mkdir kataExemple
