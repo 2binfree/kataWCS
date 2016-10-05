@@ -2,7 +2,7 @@
 
 Pour les multiples de 3, la chaîne retournée sera “Fizz”.
 Pour les multiples de 5, la chaîne retournée sera “Buzz”.
-Pour les multiples de 3 et 5, la chaîne retournée sera “FizzBuzz”.
+Pour les multiples de 3 et 8, la chaîne retournée sera “FizzBuzz”.
 Si ce dernier n’est ni un multiple de 3, ni un multiple de 5, on retournera le nombre
 
 

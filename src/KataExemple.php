@@ -6,8 +6,10 @@ class KataExemple
 {
     public static function action($value)
     {
-        return true;
+
     }
 }
+
+
 
 

@@ -1,0 +1,6 @@
+Le but de ce dojo est d'afficher des statistiques sur une phrase.
+L'argument en entrée est une phrase.
+La fonction doit calculer le nombre de mot et le nombre moyen de lettres par mot
+Les fonctions nécessaires à ce dojo : strLen, explode, count
+La valeur de sortie est un tableau au format suivant :
+    array("totalMot" => xx, "moyenneLettreParMot" => yy)
