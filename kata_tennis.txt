@@ -1,4 +1,6 @@
-Le but du dojo est d’afficher le score courant d’un match de tennis. 
+travail sur : conditions, boucle for, manipulation de chaine
+
+Le but du dojo est d’afficher le score courant d’un match de tennis.
 On a en entrée une chaîne de caractères composée des caractères ‘1’ et ‘2’ qui indique la séquence des points marqués. 
 Par exemple la chaîne “11122” indique que le joueur 1 a marqué les trois premiers points puis
 le joueur 2 en a marqué 2 et le joueur 1 marque le dernier point du jeu.

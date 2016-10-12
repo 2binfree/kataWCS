@@ -1,3 +1,5 @@
+travail sur : manipulation de chaine, conversion, tableaux, conditions
+
 Dojo Verlan
 
 Le but du dojo est de transformer certains mots d’une phrase en permutant les deux moitiés du mot, à condition que le mot fasse au moins 6 caractères.

@@ -1,3 +1,5 @@
+Travail sur : tableau de tableau, switch boucle for
+
 Le but de ce dojo est d'exécuter des calculs sur une matrice.
 En entrée:
     une matrice de 3 par 3 sous forme de tableau : [[0, 0, 0], [0, 0, 0], [0, 0, 0]]

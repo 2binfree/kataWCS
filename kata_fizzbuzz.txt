@@ -1,3 +1,5 @@
+travail sur : conditions
+
 Écrire une fonction prenant en argument un int (n) qui retourne une chaîne de caractères (string).
 
 Pour les multiples de 3, la chaîne retournée sera “Fizz”.
