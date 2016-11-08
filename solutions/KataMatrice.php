@@ -16,13 +16,13 @@ class KataMatrice
                         $result[$row][$cell] = $matrice[$row][$cell] + $value;
                         break;
                     case "-":
-                        $result[$row][$cell] = $matrice[$row][$cell] + $value;
+                        $result[$row][$cell] = $matrice[$row][$cell] - $value;
                         break;
                     case "/":
-                        $result[$row][$cell] = $matrice[$row][$cell] + $value;
+                        $result[$row][$cell] = $matrice[$row][$cell] / $value;
                         break;
                     case "x":
-                        $result[$row][$cell] = $matrice[$row][$cell] + $value;
+                        $result[$row][$cell] = $matrice[$row][$cell] * $value;
                         break;
                 }
             }
