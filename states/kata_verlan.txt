@@ -2,8 +2,9 @@ travail sur : manipulation de chaine, conversion, tableaux, conditions
 
 Dojo Verlan
 
-Le but du dojo est de transformer certains mots d’une phrase en permutant les deux moitiés du mot, à condition que le mot fasse au moins 6 caractères.
-En entré, la phrase à transformer, en sortie, la phrase transformée.
+Le but du dojo est de transformer certains mots d’une phrase en permutant les deux moitiés du mot,
+à condition que le mot fasse au moins 6 caractères.
+En entrée, la phrase à transformer, en sortie, la phrase transformée.
 
 Ex : La maison prés de la fontaine => la sonmai prés de la ainefont
 
