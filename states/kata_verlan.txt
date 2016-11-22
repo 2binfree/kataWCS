@@ -10,4 +10,4 @@ Ex : La maison prés de la fontaine => la sonmai prés de la ainefont
 
 Optionnel : la césure devra se faire sur la consonne au plus proche du centre du mot
 
-Ex : La maison prés de la fontaine => la sonmai prés de la tainefon
+Ex : la maison prés de la fontaine => la sonmai prés de la tainefon
