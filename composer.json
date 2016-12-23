@@ -11,8 +11,8 @@
     ],
     "require": {},
     "autoload": {
-	"psr-4": {
-	    "wcs\\": "src/"
-	}
+        "psr-4": {
+            "wcs\\": "src/"
+        }
     }
 }

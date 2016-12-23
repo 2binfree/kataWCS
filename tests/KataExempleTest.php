@@ -4,6 +4,6 @@
   {
       public function testAction()
       {
-        $this->assertEquals(true, \wcs\KataExemple::action("value"));
+          $this->assertEquals(true, \wcs\KataExemple::action("value"));
       }
   }

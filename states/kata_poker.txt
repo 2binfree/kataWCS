@@ -1,0 +1,34 @@
+Le but de ce kata est de compter les points au poker
+En entrée, 5 cartes, en sortie, un score.
+Les scores :
+    HIGH_CARD = 1
+    PAIR = 2
+    DOUBLE_PAIR = 4
+    THREE_OF_A_KING = 8
+    STRAIGHT = 16
+    FLUSH = 32
+    FULL_HOUSE = 64
+    FOUR_OF_A_KING = 128
+    STRAIGHT_FLUSH = 256
+    ROYAL_FLUSH = 512
+
+codification :
+    hearts   : H
+    spades   : S
+    clubs    : C
+    diamonds : D
+
+    2 3 4 5 6 7 8 9 10
+    Jack  : J
+    Queen : Q
+    King  : K
+    Ace   : A
+
+Les cartes sont codées par nom et couleur sur 2 caractères.
+Une main correspont à 5 cartes, soit 10 caractères à la suite dans une chaine.
+
+Exemple :
+
+    3H5S9HJDAS => 1
+    SHSSSCSD5H => 128
+    2H3H4S5C6C => 16
