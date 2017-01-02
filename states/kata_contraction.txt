@@ -1,0 +1,12 @@
+
+Le but est de convertir un signe non abbrégé en sa version abbrégée (majuscules séparées par des points).
+Exemple : ‘Wild Code School’ => ‘W.C.S.’
+
+Dans un second temps, ajouter un 1er cas particulier
+Société Nationale du Chemin de Fer Français doit donner ‘S.N.C.F.’ et non ‘S.N.D.C.D.F.F’
+Tandis que
+‘Electricité de France’ doit bien donner ‘E.D.F.’
+
+
+Puis un autre cas particulier
+‘World Wide Web Consortium’ => W.3.C. (et les autres sigles fonctionnent bien entendu toujours comme attendus)

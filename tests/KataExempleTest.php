@@ -4,6 +4,7 @@
   {
       public function testAction()
       {
-          $this->assertEquals(true, \wcs\KataExemple::action("value"));
+          $this->assertEquals ('WILD', KataExemple::action('.-- .. .-.. -..'));
+          $this->assertEquals ('WILD CODE', KataExemple::action('.-- .. .-.. -..   -.-. --- -.. .'));
       }
   }
