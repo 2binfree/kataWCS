@@ -1,0 +1,28 @@
+Créer une fonction qui trie les lettres par fréquence d'utilisation (seules les lettres de a-z sont à prendre en compte)
+On ne prend en compte que les lettres présentes dans la phrase.
+Les majuscules et minuscules ne sont pas différenciées.
+Les lettres accentuées sont à ignorer
+
+En entrée, une chaine de caractères (la phrase à analyser)
+En sortie, un tableau des résultats, triés par lettres, les plus utilisées en premier.
+
+Entrée : Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d'ennuis te seront épargnés.
+                        
+Sortie:
+        "e" => 14
+        "u" => 7
+        "t" => 7
+        "s" => 7
+        "a" => 6
+        "n" => 6
+        "i" => 5
+        "o" => 4
+        "p" => 4
+        "d" => 4
+        "r" => 3
+        "g" => 2
+        "b" => 2
+        "c" => 2
+        "m" => 2
+        "x" => 1
+                        

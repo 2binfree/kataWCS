@@ -46,4 +46,7 @@ Alphabet
        "-" => "T",
        "." => "E",
 
+tests :
+        $this->assertEquals ('WILD', \wcs\KataExemple::action('.-- .. .-.. -..'));
+        $this->assertEquals ('WILD CODE', \wcs\KataExemple::action('.-- .. .-.. -..   -.-. --- -.. .'));
 
