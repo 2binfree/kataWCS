@@ -1,0 +1,55 @@
+Créer une fonction qui calcule le total d'un panier en fonction des règles suivantes :
+Le résultat doit intégrer: 
+    Le total TTC
+    Le total HT (avec remise)
+    Le total de remise: calculé sur le total HT
+    Le total TVA à 5% (code tva 1): calculé sur le total après remise
+    Le total TVA à 20% (code tva 2): calculé sur le total après remise
+    
+    Si un même article est commandé au moins 3 fois, on applique 5% de remise sur le total HT de la ligne
+    Si un même article est commandé au moins 10 fois, on applique 10% de remise sur le total HT de la ligne
+
+Les resultats devront être affichés en monétaire (deux chiffres après la virgule). 
+L'arrondi se fera le plus tard possible afin de garder une précision maximale. 
+
+En entrée, un tableau contenant les produits.
+En sortie, un tableau des résultats.
+
+Exemple :
+
+array(
+    array(
+        'name' 	=> 'figurine maitre yoda',
+        'price_ht'	=> 47.50,
+        'code_tva'	=> 2,
+        'qty'		=> 3
+    ),
+    array(
+        'name' 	=> 'Chewing gum Chewbaka',
+        'price_ht'	=> 1.45,
+        'code_tva'	=> 1,
+        'qty'		=> 15
+    ),
+    array(
+        'name' 	=> 'Taille crayon R2D2',
+        'price_ht'	=> 7.80,
+        'code_tva'	=> 2,
+        'qty'		=> 2
+    ),
+    array(
+        'name' 	=> 'Boules de pétanque BB-8 (x2)',
+        'price_ht'	=> 34.80,
+        'code_tva'	=> 2,
+        'qty'		=> 3
+    ),
+);
+
+Sortie :
+
+Array(
+    [total_ht] => 269.73
+    [total_discount] => 14.52
+    [total_tva5] => 0.98
+    [total_tva20] => 50.03
+    [total_ttc] => 320.74
+)
