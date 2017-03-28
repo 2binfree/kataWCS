@@ -1,0 +1,32 @@
+Obectif
+
+écrire une fonction qui renvoie le résultat d'un calcul codé dans une chaine de caratères,
+arrondi à la troisième décimale.
+
+Le format d'entré est une chaine.
+
+Exemple pour des nombres entiers : "3426341667" correspond à 426 x 1667
+
+    3       : longueur du premier nombre
+    426     : nombre 1
+    3       : opérateur (0 = +, 1 = -, 2 = /, 3 = x, 4 = .)
+    4       : longueur du second nombre
+    1667    : nombre 2
+
+    résultat attendu : 710142
+
+Exemple pour des nombres à virgule : 2564430282437654212
+
+    2       : longueur partie entière du premier nombre
+    56      : nombre 1
+    4       : virgule
+    4       : longeur partie décimale du premier nombre
+    3028    : partie décimale nombre 2
+    2       : opérateur : /
+    4       : longeur partie entière second nombre
+    3765    : nombre 2
+    4       : virgule
+    2       : longueur partie décimale
+    12      : partie décimale nombre 2
+
+    résultat    attendu : 0,015
