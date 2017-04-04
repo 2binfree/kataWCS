@@ -2,7 +2,7 @@
 
 namespace wcs; // or your own namespace
 
-class KataExemple
+class KataCesarKey
 {
     public static function crypt($value, $key)
     {

@@ -2,7 +2,7 @@
 
 namespace wcs; // or your own namespace
 
-class KataExemple
+class KataStrCalc
 {
     public static function action($value)
     {
