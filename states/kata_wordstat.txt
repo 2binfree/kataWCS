@@ -5,3 +5,5 @@ L'argument en entrée est une phrase.
 La fonction doit calculer le nombre de mot et le nombre moyen de lettres par mot
 La valeur de sortie est un tableau au format suivant :
     array("totalMot" => xx, "moyenneLettreParMot" => yy)
+
+   "Je code pour Lyon" => "totalMot" => 4, "moyenneLettreParMot" => 3.5

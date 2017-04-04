@@ -3,7 +3,7 @@ Obectif
 écrire une fonction qui renvoie le résultat d'un calcul codé dans une chaine de caratères,
 arrondi à la troisième décimale.
 
-Le format d'entré est une chaine.
+Le format d'entrée est une chaine.
 
 Exemple pour des nombres entiers : "3426341667" correspond à 426 x 1667
 
@@ -15,7 +15,7 @@ Exemple pour des nombres entiers : "3426341667" correspond à 426 x 1667
 
     résultat attendu : 710142
 
-Exemple pour des nombres à virgule : 2564430282437654212
+Exemple pour des nombres à virgule : 2564430282437654212 correspond à 56.3028 / 3765.12
 
     2       : longueur partie entière du premier nombre
     56      : nombre 1

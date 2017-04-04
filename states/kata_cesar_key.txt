@@ -1,0 +1,17 @@
+Crypter/décrypter un text avec une clé : la clé de César
+
+Règles :
+
+Passage du texte à crypter, puis de la clé.
+Le principe du cryptage consiste à prendre le code ASCII de chaque caractère, d'ajouter la clé à cette valeur, et de
+convertir le résultat à nouveau en caractère.
+Les codes ASCII doivent être compris entre 32 et 122.
+
+Ex :
+ - crypt('Je code 4 Lyon', 1) => 'Kf!dpef!5!Mzpo'
+ - crypt('Je code 4 Lyon', 5) => 'Oj%htij%9%Q$ts'
+ - crypt('Je code 4 Lyon', 45) => 'w8M6B78MaMyLBA'
+
+- decrypt('Kf!dpef!5!Mzpo', 1) => Je code 4 Lyon
+- decrypt('Oj%htij%9%Q$ts', 5) => Je code 4 Lyon
+- decrypt('w8M6B78MaMyLBA', 45) => Je code 4 Lyon
