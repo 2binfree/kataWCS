@@ -1,0 +1,18 @@
+Objectifs :
+
+1 : compter le nombre de voyelles et de consonnes dans une phrase
+2 : afficher le mot contenant le plus de voyelles
+3 : afficher le mot contenant le plus de consonnes
+4 : afficher le mot ayant le rapport voyelle par consonne le plus fort
+
+En entrée, une phrase
+En sortie, un tableau :
+
+array(
+    "vowel" => xx,
+    "consonant" => yy,
+    "most_consonant" => zz,
+    "best_report" => zx
+)
+
+La phrase : Portez ce vieux whisky au juge blond qui fume

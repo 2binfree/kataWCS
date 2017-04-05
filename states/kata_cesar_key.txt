@@ -1,4 +1,4 @@
-Crypter/décrypter un text avec une clé : la clé de César
+Crypter/décrypter un texte avec une clé : la clé de César
 
 Règles :
 
