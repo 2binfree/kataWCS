@@ -1,0 +1,4 @@
+A l'aide de la fonction "rand", créez un tableau de 50 entiers aléatoires compris entre
+1 et 100, puis affichez-le trié du plus grand au plus petit.
+
+

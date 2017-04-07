@@ -2,7 +2,7 @@
 
 namespace wcs; // or your own namespace
 
-class KataExemple
+class KataVowelConsonant
 {
     public static function algo(){
         $totalVowels = 0;
