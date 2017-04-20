@@ -5,20 +5,12 @@ namespace wcs; // or your own namespace
 
 class KataCharCount
 {
-    public static function action($str)
+    public static function action($string)
     {
-        $result = array();
-        $str = strtolower($str);
-        for($i = 0; $i < strlen($str); $i++){
-            if (preg_match("/^[a-z]+$/", $str[$i])) {
-                if (!isset($result[$str[$i]])){
-                    $result[$str[$i]] = 1;
-                } else {
-                    $result[$str[$i]]++;
-                }
-            }
+        $string = preg_replace('/[^a-z]+/', '', strtolower($string));
+        foreach( count_chars($string, 1) as $letter => $nb){
+            $result[chr($letter)] = $nb;
         }
-        arsort($result);
-        return $result;
+        return arsort($result);
     }
 }

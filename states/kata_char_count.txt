@@ -1,4 +1,5 @@
-Créer une fonction qui trie les lettres par fréquence d'utilisation (seules les lettres de a-z sont à prendre en compte)
+Créer une fonction qui trie les lettres par fréquence d'utilisation
+(seules les lettres de a-z sont à prendre en compte)
 On ne prend en compte que les lettres présentes dans la phrase.
 Les majuscules et minuscules ne sont pas différenciées.
 Les lettres accentuées sont à ignorer
