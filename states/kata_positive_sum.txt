@@ -2,9 +2,12 @@ travail sur : conditions et boucles
 
 Écrire une fonction prenant en argument tableau de valeur entière et retournant la somme des entiers positifs
 et des entiers négatifs de ce tableau.
+Si l'argument n'est pas un tableau, ou un tableau vide, le retour doit être un tableau vide.
 
 exemple:
 [-3, -5, -1, -1, -2, -1] = [0, -13]
 [3, 5, 1, 1, 2, 1] = [13, 0]
 [3, 5, 1, -1, -2, 1] = [10, -3]
 [-3, 5, 1, 1, -2, 1] = [8, -5]
+[] = []
+"bonjour" = []

@@ -4,16 +4,14 @@ namespace wcs; // or your own namespace
 
 class KataArraySum
 {
-    public static function action($value)
+    public static function action($numbers)
     {
+        if (count($numbers) === 0 or !is_array($numbers)) {
+            return [];
+        }
         $result = [0, 0];
-        foreach ($value as $number){
-            if($number > 0){
-                $result[0] += $number;
-            }
-            else {
-                $result[1] += $number;
-            }
+        foreach ($numbers as $number) {
+            $result[($number > 0) ? 0 : 1] += $number;
         }
         return $result;
     }

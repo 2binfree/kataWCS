@@ -1,5 +1,5 @@
 travail sur la recursivité.
 
 Ecrire un programme qui reçoit en entré un chemin et qui affiche en sortie les
-fichiers et dossier à partir de ce chemin.
+fichiers et dossiers à partir de ce chemin.
 
