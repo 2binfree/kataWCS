@@ -1,0 +1,4 @@
+Le but de ce kata est de détecter si un mot est un palindrome ou non.
+Pour info, un palindrome est un mot que peut se lire identiquement dans un sens comme dans l'autre.
+
+exemple: sas, sonos, serres
