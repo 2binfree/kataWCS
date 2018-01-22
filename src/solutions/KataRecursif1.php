@@ -11,19 +11,28 @@ namespace wcs;
 
 class KataRecursif1
 {
-    public function action($rootDir, $level = 0)
+    public function action($rootDir, $ext = null, $level = 0)
     {
         $fd = opendir($rootDir);
         while ($file = readdir($fd))
         {
             if (is_dir($rootDir . $file)) {
-                if ($file != "." && $file != "..") {
+                if ($file !== "." && $file !== "..") {
                     echo str_repeat(" ", $level * 4) . "[" . $rootDir . $file . "]\n";
-                    $this->action($rootDir . $file . '/', $level + 1);
+                    $this->action($rootDir . $file . '/', $ext, $level + 1);
                 }
             }
             else {
-                echo str_repeat(" ", $level * 4). $rootDir . $file . "\n";
+                $display = true;
+                if ($ext !== null) {
+                    $parts = explode(".", $file);
+                    if (end($parts) !== $ext) {
+                        $display = false;
+                    }
+                }
+                if (true === $display) {
+                    echo str_repeat(" ", $level * 4) . $rootDir . $file . "\n";
+                }
             }
         }
         closedir($fd);
@@ -31,4 +40,4 @@ class KataRecursif1
 }
 
 $rec = new KataRecursif1();
-$rec->action("/var/log/");
+$rec->action("/var/log/", "log");

@@ -1,0 +1,11 @@
+Créer un algo qui vérifie si un joueur à gagné ou pas sur une grille de tic tac toe remplie.
+Un gagnant est un joueur qui a rempli une ligne horizontale, verticale ou en diagonale avec son identifiant.
+
+La grille est de 3x3
+
+Bonus 1 : l'algo doit fonctionner pour n'importe quelle taille de grille.
+
+Bonus 2 : l'algo doit fonctionner avec une ligne de taille inférieur à la taille du tableau.
+          Par exemple, le joueur doit aligner trois marques dans un tableau 5x5
+
+
