@@ -4,55 +4,62 @@ namespace wcs; // or your own namespace
 
 class KataTicTacToe
 {
-    const SCORE_WIN = 3;
-    const TAB_SIZE = 3;
-
-    public static function action($value)
+    public static function action($grid, $size, $scoreToWin)
     {
-        for ($x = 0; $x < self::TAB_SIZE; $x++) {
+        for ($x = 0; $x < $size; $x++) {
             $playerH = 0;
             $playerV = 0;
             $scoreH = 1;
             $scoreV = 1;
-            for ($y = 0; $y < self::TAB_SIZE; $y++) {
-                if ($playerH === $value[$x][$y][0] && $playerH !== 0) {
+            for ($y = 0; $y < $size; $y++) {
+                $cell = $grid[$x][$y];
+                if ($playerH === $cell && $playerH !== 0) {
                     $scoreH++;
-                    if ($scoreH === self::SCORE_WIN) {
+                    if ($scoreH === $scoreToWin) {
                         return $playerH;
                     }
                 } else {
-                    $playerH = $value[$x][$y][0];
+                    $playerH = $cell;
+                    $scoreH = 1;
                 }
-                if ($playerV === $value[$y][$x][0] && $playerV !== 0) {
+                $cell = $grid[$y][$x];
+                if ($playerV === $cell && $playerV !== 0) {
                     $scoreV++;
-                    if ($scoreV === self::SCORE_WIN) {
+                    if ($scoreV === $scoreToWin) {
                         return $playerV;
                     }
                 } else {
-                    $playerV = $value[$y][$x][0];
+                    $playerV = $cell;
+                    $scoreV = 1;
                 }
             }
         }
-        $playerL = 0;
-        $playerR = 0;
-        $scoreL = 1;
-        $scoreR = 1;
-        for ($z = 0; $z < self::TAB_SIZE; $z++) {
-            if ($playerL === $value[$z][$z][0] && $playerL !== 0) {
-                $scoreL++;
-                if ($scoreL === self::SCORE_WIN) {
-                    return $playerL;
+        for ($x = $size - $scoreToWin; $x >= 0; $x--) {
+            $playerL = 0;
+            $playerR = 0;
+            $scoreL = 1;
+            $scoreR = 1;
+            for ($y = 0; $y < $size - $x; $y++) {
+                $cell = $grid[$y + $x][$y];
+                if ($playerL === $cell && $playerL !== 0) {
+                    $scoreL++;
+                    if ($scoreL === $scoreToWin) {
+                        return $playerL;
+                    }
+                } else {
+                    $playerL = $cell;
+                    $scoreL = 1;
                 }
-            } else {
-                $playerL = $value[$z][$z][0];
-            }
-            if ($playerR === $value[self::TAB_SIZE - $z - 1][$z][0] && $playerR !== 0) {
-                $scoreR++;
-                if ($scoreR === self::SCORE_WIN) {
-                    return $playerR;
+                $cell = $grid[$size - ($y + $x) - 1][$y];
+                if ($playerR === $cell && $playerR !== 0) {
+                    $scoreR++;
+                    if ($scoreR === $scoreToWin) {
+                        return $playerR;
+                    }
+                } else {
+                    $playerR = $cell;
+                    $scoreR = 1;
                 }
-            } else {
-                $playerR = $value[self::TAB_SIZE - $z - 1][$z][0];
             }
         }
         return false;
