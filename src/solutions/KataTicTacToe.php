@@ -4,61 +4,62 @@ namespace wcs; // or your own namespace
 
 class KataTicTacToe
 {
-    public static function action($grid, $size, $scoreToWin)
+    public static function action($grid, $size, $score2Win)
     {
-        for ($x = 0; $x < $size; $x++) {
-            $playerH = 0;
-            $playerV = 0;
-            $scoreH = 1;
-            $scoreV = 1;
-            for ($y = 0; $y < $size; $y++) {
-                $cell = $grid[$x][$y];
-                if ($playerH === $cell && $playerH !== 0) {
-                    $scoreH++;
-                    if ($scoreH === $scoreToWin) {
-                        return $playerH;
+        $size2Test = $size - $score2Win;
+        for ($x = 0; $x <= $size2Test; $x++) {
+            for ($y = 0; $y <= $size2Test; $y++) {
+                $scoreDL = 1;
+                $scoreDR = 1;
+                $playerDL = false;
+                $playerDR = false;
+                for ($d = 0; $d < $score2Win; $d++) {
+                    $cell1 = $grid[$x + $d][$y + $d];
+                    if ($playerDR === $cell1 && $cell1 !== 0) {
+                        $scoreDR++;
+                        if ($scoreDR === $score2Win) {
+                            return $playerDR;
+                        }
+                    } else {
+                        $playerDR = $cell1;
+                        $scoreDR = 1;
                     }
-                } else {
-                    $playerH = $cell;
-                    $scoreH = 1;
-                }
-                $cell = $grid[$y][$x];
-                if ($playerV === $cell && $playerV !== 0) {
-                    $scoreV++;
-                    if ($scoreV === $scoreToWin) {
-                        return $playerV;
+                    $cell2 = $grid[$x - $d + ($score2Win - 1)][$y + $d];
+                    if ($playerDL === $cell2 && $cell2 !== 0) {
+                        $scoreDL++;
+                        if ($scoreDL === $score2Win) {
+                            return $playerDL;
+                        }
+                    } else {
+                        $playerDL = $cell2;
+                        $scoreDL = 1;
                     }
-                } else {
-                    $playerV = $cell;
-                    $scoreV = 1;
                 }
             }
         }
-        for ($x = $size - $scoreToWin; $x >= 0; $x--) {
-            $playerL = 0;
-            $playerR = 0;
-            $scoreL = 1;
-            $scoreR = 1;
-            for ($y = 0; $y < $size - $x; $y++) {
-                $cell = $grid[$y + $x][$y];
-                if ($playerL === $cell && $playerL !== 0) {
-                    $scoreL++;
-                    if ($scoreL === $scoreToWin) {
-                        return $playerL;
+        for($x = 0; $x < $size; $x++){
+            $scoreH = 1;
+            $scoreV = 1;
+            $playerH = false;
+            $playerV = false;
+            for($y = 0; $y < $size; $y++){
+                if ($playerH === $grid[$x][$y] && $grid[$x][$y] !== 0){
+                    $scoreH++;
+                    if ($scoreH === $score2Win){
+                        return $playerH;
                     }
                 } else {
-                    $playerL = $cell;
-                    $scoreL = 1;
+                    $playerH = $grid[$x][$y];
+                    $scoreH = 1;
                 }
-                $cell = $grid[$size - ($y + $x) - 1][$y];
-                if ($playerR === $cell && $playerR !== 0) {
-                    $scoreR++;
-                    if ($scoreR === $scoreToWin) {
-                        return $playerR;
+                if ($playerV === $grid[$y][$x] && $grid[$y][$x] !== 0){
+                    $scoreV++;
+                    if ($scoreV === $score2Win){
+                        return $playerV;
                     }
                 } else {
-                    $playerR = $cell;
-                    $scoreR = 1;
+                    $playerV = $grid[$y][$x];
+                    $scoreV = 1;
                 }
             }
         }
